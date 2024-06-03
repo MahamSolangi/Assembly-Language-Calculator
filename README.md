@@ -7,13 +7,19 @@ This project showcases a fully functional calculator program written in assembly
 ➡ User Input Handling: Accepts input from the user through the console.
 
 ➡ Display Results: Outputs the results of the calculations directly to the console.
+
 ➡ Error Handling: Includes basic error handling for invalid operations or inputs.
+
 ➡ Modular Code: Organized into functions for better readability and maintenance.
+
 
 ○ Getting Started
 Prerequisites
 To build and run this project, you need the following:
 
 ➡ Microsoft Macro Assembler (MASM)
+
 ➡ Irvine x86 library
+
 ➡ A Windows environment (or an emulator if using a different OS)
+
