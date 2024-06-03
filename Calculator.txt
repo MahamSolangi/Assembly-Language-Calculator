@@ -19,9 +19,9 @@ INCLUDE Irvine32.inc
     InvalidOperation BYTE "Error: Invalid operation!", 0
     InvalidInput BYTE "Error: Invalid input!", 0
     resultStr BYTE "The result is: ", 0
-    num1 DWORD ?
-    num2 DWORD ?
-    result DWORD 10000 DUP(?)
+    num1 SDWORD ?
+    num2 SDWORD ?
+    result SDWORD 10000 DUP(?)
     op DWORD ?
 
 .code
@@ -195,7 +195,6 @@ MODULUS:
     mov ebx, num2
     xor edx, edx
     idiv ebx
-    mov eax, 0
     mov result, edx
     jmp DISPLAY_RESULT
 
@@ -244,13 +243,13 @@ ComputeFactorial ENDP
 
 Power PROC
     push ebx
-    mov eax, 1        ; Initialize result to 1
-    mov ebx, ecx      ; Store exponent in ebx
+    mov eax, 1       
+    mov ebx, ecx     
 PowerLoop:
-    cmp ebx, 0        ; Check if exponent is 0
-    je PowerDone      ; If yes, done
-    imul eax, num1    ; Multiply result by base (num1)
-    dec ebx           ; Decrement exponent
+    cmp ebx, 0       
+    je PowerDone      
+    imul eax, num1   
+    dec ebx          
     jmp PowerLoop
 PowerDone:
     pop ebx
