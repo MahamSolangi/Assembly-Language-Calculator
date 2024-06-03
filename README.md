@@ -14,7 +14,8 @@ This project showcases a fully functional calculator program written in assembly
 
 
 ○ Getting Started
-Prerequisites
+
+Prerequisites - 
 To build and run this project, you need the following:
 
 ➡ Microsoft Macro Assembler (MASM)
